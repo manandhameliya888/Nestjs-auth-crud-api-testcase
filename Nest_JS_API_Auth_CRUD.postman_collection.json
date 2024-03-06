@@ -72,7 +72,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAeW9wbWFpbC5jb20iLCJpYXQiOjE3MDk3MTYwNjEsImV4cCI6MTcwOTcxNzg2MX0.Cjv6iSh8HgHmeT-CE9onedNBtc3uakw4oLKROZe7fUw",
+						"value": "<Bearer token>",
 						"type": "text"
 					}
 				],
@@ -98,7 +98,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAeW9wbWFpbC5jb20iLCJpYXQiOjE3MDk3MTYwNjEsImV4cCI6MTcwOTcxNzg2MX0.Cjv6iSh8HgHmeT-CE9onedNBtc3uakw4oLKROZe7fUw",
+						"value": "<Bearer token>",
 						"type": "text"
 					}
 				],
