@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "bbf6e755-ae6e-41d3-8d02-1c6f73ed91de",
+		"name": "Nest JS API Auth CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24285877",
+		"_collection_link": "https://lunar-meteor-122952.postman.co/workspace/My-Workspace~de0c1aca-0701-47cb-8805-f80ea00cda8a/collection/24285877-bbf6e755-ae6e-41d3-8d02-1c6f73ed91de?action=share&source=collection_link&creator=24285877"
+	},
+	"item": [
+		{
+			"name": "Sign UP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test2@yopmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test2@yopmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAeW9wbWFpbC5jb20iLCJpYXQiOjE3MDk3MTYwNjEsImV4cCI6MTcwOTcxNzg2MX0.Cjv6iSh8HgHmeT-CE9onedNBtc3uakw4oLKROZe7fUw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/users/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User By ID",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAeW9wbWFpbC5jb20iLCJpYXQiOjE3MDk3MTYwNjEsImV4cCI6MTcwOTcxNzg2MX0.Cjv6iSh8HgHmeT-CE9onedNBtc3uakw4oLKROZe7fUw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Manan\",\r\n    \"lastName\": \"Dhameliya\",\r\n    \"email\": \"test@yopmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
